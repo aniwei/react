@@ -37,6 +37,12 @@ module.exports = [
     isFizzSupported: false,
   },
   {
+    shortName: 'program',
+    entryPoints: ['react-mini-program'],
+    isFlowTyped: true,
+    isFizzSupported: false,
+  },
+  {
     shortName: 'fabric',
     entryPoints: ['react-native-renderer/fabric'],
     isFlowTyped: true,
