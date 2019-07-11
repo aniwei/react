@@ -1429,7 +1429,11 @@ function commitRootImpl(root) {
     // state of the host tree right before we mutate it. This is where
     // getSnapshotBeforeUpdate is called.
     startCommitSnapshotEffectsTimer();
-    prepareForCommit(root.containerInfo);
+
+    // mini-program not support
+    // prepareForCommit(root.containerInfo);
+    
+    
     nextEffect = firstEffect;
     do {
       if (__DEV__) {
